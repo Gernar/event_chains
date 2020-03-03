@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="menu">
+    <form id="change_form" name="change">
+        <label for="n_neighbors">Введите число соседей</label><br>
+        <input type="text" value="50" id="n_neighbors" name="n_neighbors">
+        <button id="submit">Изменить</button>
+        <input type="checkbox" id="get_all" name="get_all">
+        <label for="get_all">Использовать всех</label>
+
+    </form>
+</div>
+
+<div class="window">
+    <div class="container-1">
+        <div class="container-1__inner" id="stack_0">
+            <div class="new" id="empty"></div>
+        </div>
+    </div>
+    <div class="canvas">
+        <div class="line" id="line_0">
+            <div class="info" id="info_0"><p>1</p></div>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="new modal__trigger" id="0"></div>
+    </div>
+
+</div>
+{% endblock %}
+
